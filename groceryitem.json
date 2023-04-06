@@ -1,0 +1,125 @@
+{
+    "list":[
+        {
+            "SLNO":1,
+            "Name":"Sugar",
+            "CompanyName":"Madhur",
+            "Image":"sugar.jpg",
+            "Quantity":"1kg",
+            "Department":"Grocery",
+            "Price":"$80"
+
+            
+        },
+        {
+            "SLNO":2,
+            "Name":"Rice",
+            "CompanyName":"India Gate",
+            "Image":"rice.jpg",
+            "Quantity":"1kg",
+            "Department":"Grocery",
+            "Price":"$92"
+        },
+        {
+            "SLNO":3,
+            "Name":"Ketchup",
+            "CompanyName":"Heinz",
+            "Image":"ketchup.jpg",
+            "Quantity":"500gm",
+            "Department":"Vegetable",
+            "Price":"$35"
+            
+        },
+        {
+
+            "SLNO":4,
+            "Name":"Tea Powder",
+            "CompanyName":"Kannan Devan",
+            "Image":"teapwd.jpg",
+            "Quantity":"1kg",
+            "Department":"Production",
+            "Price":"$90"
+        },
+        {
+            "SLNO":5,
+            "Name":"Cilli Powder",
+            "CompanyName":"Eastern",
+            "Image":"chillipow.jpg",
+            "Quantity":"500kg",
+            "Department":"Production",
+            "Price":"$30"
+        },
+        {
+            "SLNO":6,
+            "Name":"Salt",
+            "CompanyName":"Tata",
+            "Image":"salt.jpg",
+            "Quantity":"1kg",
+            "Department":"Production",
+            "Price":"$45"
+            
+        },
+        {
+            "SLNO":7,
+            "Name":"Rava",
+            "CompanyName":"Eastern",
+            "Image":"rava.jpg",
+            "Quantity":"2kg",
+            "Department":"Production",
+            "Price":"$37"
+            
+        },
+        {
+            "SLNO":8,
+            "Name":"Washing Powder",
+            "CompanyName":"Ariel",
+            "Image":"washing.jpg",
+            "Quantity":"2kg",
+            "Department":"Production",
+            "Price":"$500"
+            
+        },
+        {
+            "SLNO":9,
+            "Name":"Coconut Oil",
+            "CompanyName":"Kera",
+            "Image":"Keraoil.jpg",
+            "Quantity":"2lit",
+            "Department":"Production",
+            "Price":"$30"
+            
+        },
+        {
+            "SLNO":10,
+            "Name":"Coriander Powder",
+            "CompanyName":"Eastern",
+            "Image":"coriander.jpg",
+            "Quantity":"1kg",
+            "Department":"Production",
+            "Price":"$37"
+            
+        },
+        {
+            "SLNO":11,
+            "Name":"Paste",
+            "CompanyName":"Dabur",
+            "Image":"paste.jpg",
+            "Quantity":"100gm",
+            "Department":"Production",
+            "Price":"$27"
+        },
+        {
+            "SLNO":12,
+            "Name":"Flour",
+            "CompanyName":"Elite",
+            "Image":"elitemaida.jpg",
+            "Quantity":"2kg",
+            "Department":"Production",
+            "Price":"$110"
+           
+        }
+      
+
+    ]
+    }
+    

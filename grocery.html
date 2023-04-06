@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"> 
+   
+</head>
+<body>
+    <div class="p-3 mb-2 bg-primary text-white">
+        <font color="orange"><b><h2  class="text-center">Grocery List</h2></b></font>
+    </div>
+    <div class="button">
+    <button  onclick="myfn()">Generate List</button></div>
+    <br>
+    <div class="container-fluid">
+    <table class="table table-striped">
+        <thead>   
+        <tr>
+                <th>SL.NO</th>
+                <th>Name</th>
+                <th>Company Name</th>
+                <th>Image</th>
+                <th>Quantity</th>
+                <th>Department</th>
+                <th>Price</th>
+            </tr>
+            </thead>
+    <tbody id="demo" >
+    </tbody>
+   </table>
+    <img src="" alt="" id="pic">
+
+    </div>
+    <script>
+        function myfn(){
+            var xhttp=new XMLHttpRequest();
+            xhttp.onreadystatechange=function(){
+                if(this.readyState==4 && this.status==200){
+                    document.getElementById("demo").innerHTML=this.responseText
+                    var response=JSON.parse(this.responseText)
+                    console.log(response)
+                    var r=response.list
+                    console.log(r)
+                    // console.log(r[0].Image)
+                    // var a=document.getElementById("pic")
+                    // console.log("a")
+                    // a.src=r[0].Image
+                    var out=""
+                    for(let i=0;i<r.length;i++){
+                        out+="<tr>"+
+                            "<td>"+r[i].SLNO+"</td>"+
+                            "<td>"+r[i].Name+"</td>"+
+                            "<td>"+r[i].CompanyName+"</td>"+
+                            "<td>"+"<img src="+r[i].Image+" height='40px'>"+"</td>"+
+                            "<td>"+r[i].Quantity+"</td>"+
+                            "<td>"+r[i].Department+"</td>"+
+                            "<td>"+r[i].Price+"</td>"+"</tr>"
+                        }
+                        document.getElementById("demo").innerHTML=out
+                }
+            }
+            xhttp.open("GET","groceryitem.json",true);
+            xhttp.send();
+        }
+     
+
+    </script>
+</body>
+</html>
